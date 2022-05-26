@@ -1,24 +1,11 @@
-# esc-bug
+# HeadlessUI Modal Escape key bug
 
-## Project setup
-```
-npm install
-```
+This project demonstrates a bug with comboboxes in modal dialogs in recent versions of
+HeadlessUI.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+When the combobox input has focus, pressing esc does not close the dialog.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Pressing esc does work properly if you click just below the input inside of the modal.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+HeadlessUI v.1.6.1 works fine, but v.1.6.2 does not.
+You can test this by downgrading headlessui to v.1.6.1 and running npm install, then rebuilding this project
